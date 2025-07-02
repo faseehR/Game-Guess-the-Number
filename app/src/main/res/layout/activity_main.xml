@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FF00">  <!-- Green background -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guess the Number"
+            android:textColor="#FFFF00"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp" />
+
+        <!-- Two Images: Computer and User -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <!-- Computer side -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:id="@+id/imgComputer"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/computer"
+                    android:contentDescription="Computer Image" />
+
+                <TextView
+                    android:id="@+id/txtComputer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Computer guesses your number"
+                    android:textColor="#000000"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+
+            <!-- User side -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/imgUser"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/human"
+                    android:contentDescription="User Image" />
+
+                <TextView
+                    android:id="@+id/txtUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You guess computer's number"
+                    android:textColor="#000000"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Hint Button -->
+        <Button
+            android:id="@+id/btnHint"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Hint"
+            android:textColor="#FFFF00"
+            android:backgroundTint="#FF0000"
+            android:layout_marginTop="40dp" />
+
+        <!-- Exit Button -->
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Exit"
+            android:backgroundTint="#FF0000"
+            android:textColor="#FFFF00"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+</ScrollView>
